@@ -3,8 +3,8 @@ package com.fanhl.draganddrop;
 import android.animation.LayoutTransition;
 import android.content.ClipData;
 import android.graphics.drawable.Drawable;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.DragEvent;
 import android.view.MotionEvent;
@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivityOld2 extends ActionBarActivity {
 
     private LinearLayout topLeft;
     private LinearLayout topRight;
@@ -137,7 +137,7 @@ public class MainActivity extends ActionBarActivity {
 
     private class MyLayoutTransition extends LayoutTransition {
         {
-            addTransitionListener(new LayoutTransition.TransitionListener() {
+            addTransitionListener(new TransitionListener() {
                 @Override
                 public void startTransition(LayoutTransition transition, ViewGroup container, View view, int transitionType) {
 
@@ -145,7 +145,7 @@ public class MainActivity extends ActionBarActivity {
 
                 @Override
                 public void endTransition(LayoutTransition transition, ViewGroup container, View view, int transitionType) {
-                    //FIXME 这里怎么写啊,没法写啊!!!!真的没法写啊
+
                 }
             });
         }
