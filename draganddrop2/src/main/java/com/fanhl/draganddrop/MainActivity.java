@@ -100,7 +100,7 @@ public class MainActivity extends ActionBarActivity {
                     LinearLayout destContainer = (LinearLayout) v;
                     int addViewIndex = getAddViewIndex(destContainer, view, event.getX());
 
-                    //FIXME 问题就在这里!!!! 下面两段代码没法连着走
+                    //FIXME 问题就在这里!!!! 因为有动画效果, 下面两段代码没法连着走
                     srcContainer.removeView(view);
                     destContainer.addView(view, addViewIndex);
                     view.setVisibility(View.VISIBLE);
