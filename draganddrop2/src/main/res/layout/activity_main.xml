@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/topleft"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_row="0"
+        android:layout_weight="1"
+        android:background="@drawable/shape">
+
+        <ImageView
+            android:id="@+id/myimage1"
+            style="@style/img"
+            android:src="@drawable/card102" />
+
+        <ImageView
+            style="@style/img"
+            android:src="@drawable/card102" />
+        <ImageView
+            style="@style/img"
+            android:src="@drawable/card102" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topright"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape">
+
+        <ImageView
+            android:id="@+id/myimage2"
+            style="@style/img"
+            android:src="@drawable/card103" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomleft"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape">
+
+        <ImageView
+            android:id="@+id/myimage3"
+            style="@style/img"
+            android:src="@drawable/card104" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomright"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape">
+
+        <ImageView
+            android:id="@+id/myimage4"
+            style="@style/img"
+            android:src="@drawable/card105" />
+    </LinearLayout>
+
+</LinearLayout>
